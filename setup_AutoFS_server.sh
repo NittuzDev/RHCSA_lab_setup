@@ -4,7 +4,7 @@ yum install nfs* -y
 systemctl enable nfs-utils
 systemctl enable nfs-server
 mkdir -p /home/guests
-mkdir -p /home/IT_Database{1..20}
+mkdir -p /home/guests/IT_Database{1..20}
 cd /home/guests/
 chown -R nobody:nobody /home/guests
 chcon -R -t nfs_t /home/guests/
